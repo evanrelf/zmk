@@ -43,7 +43,7 @@
         &trans              &trans              &trans              &trans              &trans                  &trans              &trans              &trans              &trans              &trans
         &trans              &trans              &trans              &trans              &trans                  &trans              &trans              &trans              &trans              &trans
         &trans              &trans              &trans              &trans              &trans                  &trans              &trans              &trans              &trans              &trans
-                                                                    &mo LEFT_LAYER      &trans                  &trans              &mo BOTH_LAYER
+                                                                    &mo LEFT_LAYER      &trans                  &trans              &mo RIGHT_LAYER
       >;
     };
 
@@ -52,7 +52,7 @@
         &trans              &trans              &trans              &trans              &trans                  &trans              &trans              &trans              &trans              &trans
         &trans              &trans              &trans              &trans              &trans                  &trans              &trans              &trans              &trans              &trans
         &trans              &trans              &trans              &trans              &trans                  &trans              &trans              &trans              &trans              &trans
-                                                                    &mo BOTH_LAYER      &trans                  &trans              &mo RIGHT_LAYER
+                                                                    &mo LEFT_LAYER      &trans                  &trans              &mo RIGHT_LAYER
       >;
     };
 
@@ -109,6 +109,15 @@
       key-positions = <28 29>;
       layers = <0>;
       timeout-ms = <50>;
+    };
+  };
+
+  conditional_layers {
+    compatible = "zmk,conditional-layers";
+
+    both_layer {
+      if-layers = <1 2>;
+      then-layer = <3>;
     };
   };
 };
