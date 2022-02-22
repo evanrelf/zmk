@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
+IFS=$'\n\t'
+
+if [ "${IN_NIX_SHELL:-}" != "impure" ]; then
+  echo "Must run from inside Nix shell"
+  exit 1
+fi
+
+# west init -l app/
+
+# west update
+
+# source "zephyr/zephyr-env.sh"
+
+# cd app/
+
+set -x
+
+cd app/
+
+west build -d build/left -b nice_nano_v2 -- -DSHIELD=cradio_left
+cp build/left/zephyr/zmk.uf2 ../left.uf2
+
+west build -d build/right -b nice_nano_v2 -- -DSHIELD=cradio_right
+cp build/right/zephyr/zmk.uf2 ../right.uf2
