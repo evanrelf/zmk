@@ -20,8 +20,8 @@ set -x
 
 cd app/
 
-west build -d build/left -b nice_nano_v2 -- -DSHIELD=cradio_left
+west build -d build/left -b nice_nano_v2 -- -DSHIELD=cradio_left -DZMK_CONFIG="$(pwd)/config"
 cp build/left/zephyr/zmk.uf2 ../left.uf2
 
-west build -d build/right -b nice_nano_v2 -- -DSHIELD=cradio_right
+west build -d build/right -b nice_nano_v2 -- -DSHIELD=cradio_right -DZMK_CONFIG="$(pwd)/config"
 cp build/right/zephyr/zmk.uf2 ../right.uf2
