@@ -18,10 +18,12 @@ fi
 
 set -x
 
-cd app/
+root=$(git rev-parse --show-toplevel)
 
-west build -d build/left -b nice_nano_v2 -- -DSHIELD=cradio_left -DZMK_CONFIG="$(pwd)/config"
-cp build/left/zephyr/zmk.uf2 ../left.uf2
+cd "${root}/app"
 
-west build -d build/right -b nice_nano_v2 -- -DSHIELD=cradio_right -DZMK_CONFIG="$(pwd)/config"
-cp build/right/zephyr/zmk.uf2 ../right.uf2
+west build -p -d build/left -b nice_nano_v2 -- -DSHIELD=cradio_left -DZMK_CONFIG="${root}/config"
+cp "${root}/app/build/left/zephyr/zmk.uf2" "${root}/left.uf2"
+
+west build -p -d build/right -b nice_nano_v2 -- -DSHIELD=cradio_right -DZMK_CONFIG="${root}/config"
+cp "${root}/app/build/right/zephyr/zmk.uf2" "${root}/right.uf2"
