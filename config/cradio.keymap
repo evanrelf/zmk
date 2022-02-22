@@ -8,10 +8,6 @@
 #define BOTH_LAYER 3
 
 / {
-  combos {
-    compatible = "zmk,combos";
-  };
-
   keymap {
     compatible = "zmk,keymap";
 
@@ -68,5 +64,51 @@
                                                                     &trans              &trans                  &trans              &trans
       >;
     };
- };
+  };
+
+  combos {
+    compatible = "zmk,combos";
+
+    combo_tab {
+      bindings = <&kp TAB>;
+      key-positions = <0 1>;
+      layers = <0>;
+      timeout-ms = <50>;
+    };
+
+    combo_backspace {
+      bindings = <&kp BACKSPACE>;
+      key-positions = <8 9>;
+      layers = <0>;
+      timeout-ms = <50>;
+    };
+
+    combo_escape {
+      bindings = <&kp ESCAPE>;
+      key-positions = <10 11>;
+      layers = <0>;
+      timeout-ms = <50>;
+    };
+
+    combo_return {
+      bindings = <&kp RETURN>;
+      key-positions = <18 19>;
+      layers = <0>;
+      timeout-ms = <50>;
+    };
+
+    combo_left_shift {
+      bindings = <&kp LEFT_SHIFT>;
+      key-positions = <20 21>;
+      layers = <0>;
+      timeout-ms = <50>;
+    };
+
+    combo_right_shift {
+      bindings = <&kp RIGHT_SHIFT>;
+      key-positions = <28 29>;
+      layers = <0>;
+      timeout-ms = <50>;
+    };
+  };
 };
