@@ -73,14 +73,14 @@
     combo_tab {
       bindings = <&kp TAB>;
       key-positions = <1 2>;
-      layers = <0>;
+      layers = <BASE_LAYER>;
       timeout-ms = <50>;
     };
 
     combo_escape {
       bindings = <&kp ESCAPE>;
       key-positions = <11 12>;
-      layers = <0>;
+      layers = <BASE_LAYER>;
       timeout-ms = <50>;
     };
 
@@ -88,14 +88,14 @@
     combo_backspace {
       bindings = <&kp BACKSPACE>;
       key-positions = <7 8>;
-      layers = <0>;
+      layers = <BASE_LAYER>;
       timeout-ms = <50>;
     };
 
     combo_return {
       bindings = <&kp RETURN>;
       key-positions = <17 18>;
-      layers = <0>;
+      layers = <BASE_LAYER>;
       timeout-ms = <50>;
     };
   };
@@ -104,8 +104,8 @@
     compatible = "zmk,conditional-layers";
 
     both_layer {
-      if-layers = <1 2>;
-      then-layer = <3>;
+      if-layers = <LEFT_LAYER RIGHT_LAYER>;
+      then-layer = <BOTH_LAYER>;
     };
   };
 };
