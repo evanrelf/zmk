@@ -22,18 +22,18 @@
 
     left_layer {
       bindings = <
-        &trans              &trans              &trans              &trans              &trans                  &trans              &trans              &trans              &trans              &trans
-        &trans              &trans              &trans              &trans              &trans                  &trans              &kp RIGHT_GUI       &kp RIGHT_ALT       &kp RIGHT_CONTROL   &kp RIGHT_SHIFT
-        &trans              &trans              &trans              &trans              &trans                  &trans              &trans              &trans              &trans              &trans
+        &trans              &trans              &trans              &trans              &kp GRAVE               &trans              &trans              &trans              &trans              &trans
+        &trans              &trans              &trans              &trans              &kp MINUS               &trans              &kp RIGHT_GUI       &kp RIGHT_ALT       &kp RIGHT_CONTROL   &kp RIGHT_SHIFT
+        &trans              &trans              &trans              &trans              &kp LEFT_BRACKET        &trans              &trans              &trans              &trans              &trans
                                                                     &trans              &mo RIGHT_LAYER         &mo LEFT_LAYER      &trans
       >;
     };
 
     right_layer {
       bindings = <
-        &trans              &trans              &trans              &trans              &trans                  &trans              &trans              &trans              &trans              &trans
-        &kp LEFT_SHIFT      &kp LEFT_CONTROL    &kp LEFT_ALT        &kp LEFT_GUI        &trans                  &trans              &trans              &trans              &trans              &trans
-        &trans              &trans              &trans              &trans              &trans                  &trans              &trans              &trans              &trans              &trans
+        &trans              &trans              &trans              &trans              &trans                  &kp BACKSLASH       &kp NUMBER_7        &kp NUMBER_8        &kp NUMBER_9        &trans
+        &kp LEFT_SHIFT      &kp LEFT_CONTROL    &kp LEFT_ALT        &kp LEFT_GUI        &trans                  &kp EQUAL           &kp NUMBER_4        &kp NUMBER_5        &kp NUMBER_6        &trans
+        &trans              &trans              &trans              &trans              &trans                  &kp RIGHT_BRACKET   &kp NUMBER_1        &kp NUMBER_2        &kp NUMBER_3        &trans
                                                                     &trans              &mo RIGHT_LAYER         &mo LEFT_LAYER      &kp NUMBER_0
       >;
     };
