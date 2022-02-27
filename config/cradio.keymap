@@ -20,15 +20,6 @@
     //   >;
     // };
 
-    // colemakdh_base_layer {
-    //   bindings = <
-    //     &kp Q               &kp W               &kp F               &kp P               &kp B                   &kp J               &kp L               &kp U               &kp Y               &kp SEMICOLON
-    //     &kp A               &kp R               &kp S               &kp T               &kp G                   &kp M               &kp N               &kp E               &kp I               &kp O
-    //     &kp Z               &kp X               &kp C               &kp D               &kp V                   &kp K               &kp H               &kp COMMA           &kp PERIOD          &kp SLASH
-    //                                                                 &mo LEFT_LAYER      &trans                  &trans              &mo RIGHT_LAYER
-    //   >;
-    // };
-
     base_layer {
       bindings = <
         &kp Q               &kp W               &kp E               &kp R               &kp T                   &kp Y               &kp U               &kp I               &kp O               &kp P
