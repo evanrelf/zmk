@@ -67,15 +67,15 @@
     };
 
     // Right
-    combo_backspace {
-      bindings = <&kp BACKSPACE>;
+    combo_return {
+      bindings = <&kp RETURN>;
       key-positions = <7 8>;
       layers = <BASE_LAYER>;
       timeout-ms = <50>;
     };
 
-    combo_return {
-      bindings = <&kp RETURN>;
+    combo_backspace {
+      bindings = <&kp BACKSPACE>;
       key-positions = <17 18>;
       layers = <BASE_LAYER>;
       timeout-ms = <50>;
