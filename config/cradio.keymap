@@ -23,7 +23,7 @@
     left_layer {
       bindings = <
         &trans              &trans              &trans              &trans              &trans                  &trans              &trans              &trans              &trans              &trans
-        &trans              &trans              &trans              &trans              &trans                  &trans              &trans              &trans              &trans              &trans
+        &trans              &trans              &trans              &trans              &trans                  &trans              &kp RIGHT_GUI       &kp RIGHT_ALT       &kp RIGHT_CONTROL   &kp RIGHT_SHIFT
         &trans              &trans              &trans              &trans              &trans                  &trans              &trans              &trans              &trans              &trans
                                                                     &trans              &mo RIGHT_LAYER         &mo LEFT_LAYER      &trans
       >;
@@ -32,7 +32,7 @@
     right_layer {
       bindings = <
         &trans              &trans              &trans              &trans              &trans                  &trans              &trans              &trans              &trans              &trans
-        &trans              &trans              &trans              &trans              &trans                  &trans              &trans              &trans              &trans              &trans
+        &kp LEFT_SHIFT      &kp LEFT_CONTROL    &kp LEFT_ALT        &kp LEFT_GUI        &trans                  &trans              &trans              &trans              &trans              &trans
         &trans              &trans              &trans              &trans              &trans                  &trans              &trans              &trans              &trans              &trans
                                                                     &trans              &mo RIGHT_LAYER         &mo LEFT_LAYER      &kp NUMBER_0
       >;
